@@ -23,6 +23,7 @@ def wireshark_df(wireshark_path: str) -> pd.DataFrame:
     df_wireshark = df_wireshark.rename(columns={'Info': 'SSID'})
     df_wireshark = df_wireshark[['Time', 'SSID']]
     df_wireshark = df_wireshark.set_index('SSID')
+
     return df_wireshark
 
 

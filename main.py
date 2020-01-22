@@ -1,7 +1,6 @@
 import pandas as pd
 import loader
-from analysis import normalize, plotter
-
+from analysis import normalize, plotter, tester
 
 if __name__ == '__main__':
     wifi_database_path = 'data/querry'
@@ -12,5 +11,6 @@ if __name__ == '__main__':
     df_wireshark = pd.merge(df_wireshark, df_wifi, how='inner', right_index=True, left_index=True)
 
     df_wireshark = normalize(df_wireshark)
+    # tester(df_wireshark)
     plotter(df_wireshark)
 

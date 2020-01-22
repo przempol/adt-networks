@@ -10,12 +10,14 @@ Wspomniane sieci zebrane zostały przy użyciu oprogramowania WireShark.
 Project for ADT, realising data canvassing and visualization. 
 The data is wi-fi signals collected from people visiting Legionowo central station.
 
-# Commands - must have at least python 3.x installed
+# Commands for windows - must have at least python 3.x installed
 git clone https://github.com/przempol/adt-networks
+
+cd adt-networks
 
 virtualenv venv
 
-venv\Scripts\activate
+. .\venv\Scripts\activate
 
 pip install -r requirements.txt
 
